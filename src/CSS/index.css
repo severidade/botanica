@@ -40,7 +40,8 @@ body::-webkit-scrollbar {
 
 .title {
   font-family: var(--font-title-primary);
-  font-size: 6vw;
+  /* font-family: 'brierregular'; */
+  font-size: 10vw;
   color: var(--color-title-primary);
   text-align: center;
   line-height: 1;
@@ -50,6 +51,8 @@ body::-webkit-scrollbar {
 
 .subtitle {
   text-align: center;
+  font-family: 'brierregular';
+  font-size: 5vh;
 }
 
 .menu_social {

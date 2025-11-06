@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'brierbold';
+  src: url('../fonts/brier/brier-bold-webfont.woff2') format('woff2'),
+       url('../fonts/brier/brier-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'brierregular';
+  src: url('../fonts/brier/brier-regular-webfont.woff2') format('woff2'),
+       url('../fonts/brier/brier-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

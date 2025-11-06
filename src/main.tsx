@@ -1,5 +1,6 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
+import './CSS/brier.css';
 import './CSS/reset.css';
 import './CSS/index.css';
 import App from './App.tsx';
