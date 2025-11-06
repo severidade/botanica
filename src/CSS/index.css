@@ -5,20 +5,10 @@
 :root {
   --font-title-primary: 'Kalnia', serif;
   --color-title-primary: #f7c130;
-  --color-text-primary: #ffffff;
-  --color-highlight: #ff6347;
   --color-dark: #030c1a;
   --color-light-gray : #ffffffb3;
   --color-medium-gray: #4B4B4B;
   --color-hard-gray: #353535;
-
-  --default-radius: 0.5rem;
-  --default-gap: 2rem;
-
-  --sidebar-width-mobile: 80vw;
-  --sidebar-width-desktop: 20vw;
-  --video-width-mobile: 90vw;
-  --video-width-desktop: 55vw;
 
   width: 100vw;
   max-width: 100%;
@@ -32,27 +22,15 @@ html {
   line-height: 1.7;
 }
 
-h1 {
-  font-family: var(--font-title-primary);
-  font-size: 11vw;
-  color: var(--color-title-primary);
-  text-align: center;
-  line-height: 1;
-  margin-bottom: 20px;
-  padding: 20px 50px 0 50px;
-  width: 100%;
-}
-
-p { font-size: 1.6rem;}
-
 body {
-  background-color: #353535;
+  background-color: var(--color-hard-gray);
   color: var(--color-light-gray );
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  font-size: 1.5rem;
 }
 
 body::-webkit-scrollbar {
@@ -60,18 +38,48 @@ body::-webkit-scrollbar {
   background: transparent; /* Esconde a barra de rolagem */
 }
 
-.main {
+.title {
+  font-family: var(--font-title-primary);
+  font-size: 6vw;
+  color: var(--color-title-primary);
+  text-align: center;
+  line-height: 1;
+  margin-bottom: 2rem;
   width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: var(--default-gap);
-  position: relative;
-  overflow: hidden;
-  padding-top: calc(var(--default-gap) * 2);
 }
+
+.subtitle {
+  text-align: center;
+}
+
+.menu_social {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.menu_social a {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  color: var(--color-light-gray);
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.2s ease;
+}
+
+.menu_social span {
+  position: absolute;
+  text-indent: -200px;
+} 
+
+.menu_social a:hover {
+  color: var(--color-title-primary);
+}
+
 
 @media only screen and (min-width: 1024px) {
   .app_title {
